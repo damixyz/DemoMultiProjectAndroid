@@ -5,6 +5,8 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+apply(Pair("from", file("../shared-settings.gradle")))
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {

@@ -1,7 +1,12 @@
-import org.yaml.snakeyaml.Yaml
+import  org.yaml.snakeyaml.Yaml
 
 buildscript {
     repositories {
         mavenCentral()
+    }
+
+    dependencies {
+        // for read yml file properties
+        classpath 'org.yaml:snakeyaml:2.0'
     }
 }
